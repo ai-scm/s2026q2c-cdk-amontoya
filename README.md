@@ -85,7 +85,7 @@ Copiar las credenciales proporcionadas por AWS en:
 Ejemplo:
 
 ```ini
-[891377180652_PS-PowerUserAccess]
+[xxxxxxxxx_PS-PowerUserAccess]
 aws_access_key_id=XXXXXXXXXXXX
 aws_secret_access_key=XXXXXXXXXXXX
 aws_session_token=XXXXXXXXXXXX
@@ -94,7 +94,7 @@ aws_session_token=XXXXXXXXXXXX
 Verificar que las credenciales funcionan:
 
 ```bash
-aws sts get-caller-identity --profile 891377180652_PS-PowerUserAccess
+aws sts get-caller-identity --profile xxxxxxxxx_PS-PowerUserAccess
 ```
 
 ---
@@ -106,7 +106,7 @@ CDK requiere una infraestructura mínima de soporte para poder desplegar recurso
 Ejecutar:
 
 ```bash
-cdk bootstrap --profile 891377180652_PS-PowerUserAccess
+cdk bootstrap --profile xxxxxxxxx_PS-PowerUserAccess
 ```
 
 Este comando crea el stack:
@@ -180,13 +180,13 @@ Este comando permite visualizar la infraestructura que será desplegada sin crea
 Desplegar la infraestructura:
 
 ```bash
-cdk deploy --profile 891377180652_PS-PowerUserAccess
+cdk deploy --profile 8xxxxxxxxx_PS-PowerUserAccess
 ```
 
 Alternativamente, se puede exportar el perfil:
 
 ```bash
-export AWS_PROFILE=891377180652_PS-PowerUserAccess
+export AWS_PROFILE=xxxxxxxxx_PS-PowerUserAccess
 ```
 
 y posteriormente ejecutar:
@@ -231,7 +231,7 @@ Esto permite revisar qué recursos serán creados, modificados o eliminados.
 Luego se aplican los cambios:
 
 ```bash
-cdk deploy --profile 891377180652_PS-PowerUserAccess
+cdk deploy --profile xxxxxxxxxPS-PowerUserAccess
 ```
 
 ---
@@ -241,7 +241,7 @@ cdk deploy --profile 891377180652_PS-PowerUserAccess
 Para eliminar toda la infraestructura creada:
 
 ```bash
-cdk destroy --profile 891377180652_PS-PowerUserAccess
+cdk destroy --profile xxxxxxxxx_PS-PowerUserAccess
 ```
 
 CDK solicitará confirmación antes de eliminar los recursos.
